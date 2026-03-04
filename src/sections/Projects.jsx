@@ -7,8 +7,8 @@ const projects = [
       "Developed a full-stack data visualization web app during an internship, focused on parsing Excel files and generating insightful 2D and 3D graphs. Implemented user authentication, admin dashboard, file history, and AI-generated data summaries. Used Chart.js and Three.js for interactive visualizations and ensured a responsive UI with Tailwind CSS.",
     image: "/1.png",
     tags: ["MERN Stack", "Chart.js", "Three.js", "Tailwind Css"],
-    link: "#",
-    github: "#",
+    link: "https://github.com/zainab1305/Datalytics",
+    github: "https://github.com/zainab1305/Datalytics",
   },
   {
     title: "Smart Infrastructure and Decision Planning System",
@@ -25,8 +25,8 @@ const projects = [
       "Developed an MVP stock search and analysis platform using BM25-based relevance ranking to enable intent-aware stock discovery beyond static filters. Integrated real-time market data via yfinance and delivered key price and volume insights through interactive visualizations. Built with a scalable architecture and developed collaboratively as a paired project.",
     image: "/2.png",
     tags: ["Flask", "Python", "React", "BM25"],
-    link: "#",
-    github: "#",
+    link: "https://stock-engine.vercel.app/home",
+    github: "https://github.com/IhitJoshi/Search_Engine",
   },
   
   {
@@ -35,8 +35,8 @@ const projects = [
       "Built a pantry-based meal planning system that tracks household inventory, suggests recipes based on available ingredients, identifies missing items, and maintains a shopping list using Django ORM and responsive UI components.",
     image: "/4.png",
     tags: ["Django", "Python", "Bootstrap", "JavaScript"],
-    link: "#",
-    github: "#",
+    link: "https://github.com/zainab1305/Meal-Planner",
+    github: "https://github.com/zainab1305/Meal-Planner",
   },
 ];
 
