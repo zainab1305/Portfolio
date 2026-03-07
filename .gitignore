@@ -28,3 +28,4 @@ public/*.jpg
 public/*.jpeg
 public/*.gif
 public/*.svg
+.env
