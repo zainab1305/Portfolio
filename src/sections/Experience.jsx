@@ -1,29 +1,29 @@
 const experiences = [
   {
     period: "2025 — 2026",
-    role: "Vice Chair Person",
+    role: "Vice Chairperson",
     company: "IEEE Computer Society GCET Student Branch",
     description:
-      "Organized weekly coding workshops and technical sessions on web development, DSA, and emerging technologies. Led team in conducting inter-college hackathons and coordinated speaker sessions with industry experts to bridge academic learning with industry practices.",
-    technologies: ["Workshop Planning", "Peer Mentoring", "Event Coordination", "Technical Presentations"],
+      "Co-led technical programming and operations, helping organize workshops, coding activities, and speaker sessions for a growing student community.",
+    technologies: ["Program Coordination", "Team Collaboration", "Leadership", "Public Speaking"],
     current: false,
   },
   {
-    period: "5/2025 — 6/2025",
+    period: "May 2025 — June 2025",
     role: "Web Development Intern",
     company: "Zidio Development",
     description:
-      "Developed responsive web applications and landing pages for clients. Collaborated with design team to implement user interfaces, integrated APIs, and optimized website performance for better user experience.",
-    technologies: ["MERN Stack", "Chart.js", "Three.js", "Tailwind Css"],
+      "Built responsive web interfaces, integrated frontend modules with APIs, and improved UI performance to deliver faster and more consistent user experiences.",
+    technologies: ["React", "JavaScript", "REST APIs", "Tailwind CSS"],
     current: false,
   },
   {
     period: "2026 — 2027",
-    role: "Chair Person",
+    role: "Chairperson",
     company: "IEEE Computer Society GCET Student Branch",
     description:
-      "Leading a team of 15+ student volunteers to organize technical events, coding bootcamps, and project showcases. Initiated peer-to-peer learning programs and collaborative coding projects, while managing chapter activities and fostering a vibrant tech community on campus.",
-    technologies: ["Student Leadership", "Team Management", "Event Planning", "Community Engagement"],
+      "Leading chapter strategy, mentoring core teams, and driving high-impact technical initiatives including workshops, hackathons, and expert-led sessions.",
+    technologies: ["Strategic Planning", "Team Leadership", "Operations", "Community Building"],
     current: true,
   },
   {
@@ -31,8 +31,8 @@ const experiences = [
     role: "Secretary",
     company: "IEEE GCET Student Branch",
     description:
-      "Maintaining student membership records and coordinating communication between 100+ active members. Managing event registrations, documenting meeting minutes, and creating monthly newsletters to keep students updated on upcoming workshops, competitions, and opportunities.",
-    technologies: ["Documentation", "Member Coordination", "Content Writing", "Organization"],
+      "Managing branch documentation, official communications, and execution workflows while coordinating teams and stakeholders for smooth event delivery.",
+    technologies: ["Documentation", "Communication", "Process Management", "Coordination"],
     current: true,
   },
 ];
@@ -62,7 +62,7 @@ export const Experience = () => {
             Experience that{" "}
             <span className="font-serif italic font-normal text-white">
               {" "}
-              speaks volumes.
+              drives outcomes.
             </span>
           </h2>
 
@@ -70,8 +70,8 @@ export const Experience = () => {
             className="text-muted-foreground
            animate-fade-in animation-delay-200"
           >
-            A timeline of my professional growth, from curious college student to
-            web devlopment intern and that later leading and college club.
+            A focused journey across hands-on development and technical leadership,
+            from internship execution to leading IEEE communities and initiatives.
           </p>
         </div>
 

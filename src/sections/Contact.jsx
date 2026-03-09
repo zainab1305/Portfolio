@@ -1,6 +1,5 @@
 import {
   Mail,
-  Phone,
   MapPin,
   Send,
   CheckCircle,
@@ -16,12 +15,6 @@ const contactInfo = [
     label: "Email",
     value: "zainabjambughoda13@gmail.com",
     href: "mailto:zainabjambughoda13@gmail.com",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+91 94084 27152",
-    href: "tel:+919408427152",
   },
   {
     icon: MapPin,
@@ -137,12 +130,13 @@ export const Contact = () => {
               <div>
                 <label
                   htmlFor="email"
-                  type="email"
                   className="block text-sm font-medium mb-2"
                 >
                   Email
                 </label>
                 <input
+                  id="email"
+                  type="email"
                   required
                   placeholder="your@email.com"
                   value={formData.email}

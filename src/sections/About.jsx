@@ -3,27 +3,27 @@ import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
 const highlights = [
   {
     icon: Code2,
-    title: "Structured Engineering",
+    title: "Full-Stack Execution",
     description:
-      "Building modular, scalable architectures with clean component and API design.",
+      "Building end-to-end MERN applications with clean frontend architecture and reliable backend services.",
   },
   {
     icon: Rocket,
-    title: "Performance Focus",
+    title: "Scalable Systems",
     description:
-      "Optimizing search flows, API calls, and rendering for faster, smoother applications.",
+      "Designing maintainable systems focused on performance, API efficiency, and long-term extensibility.",
   },
   {
     icon: Users,
-    title: "Execution & Ownership",
+    title: "Technical Leadership",
     description:
-      "Taking features from idea to deployment with clear logic and maintainable code.",
+      "Leading IEEE initiatives, coordinating teams, and executing technical events that create measurable student impact.",
   },
   {
     icon: Lightbulb,
-    title: "Continuous Growth",
+    title: "Data-Driven Building",
     description:
-      "Constantly strengthening full-stack fundamentals and system-level thinking.",
+      "Developing analytics and visualization workflows that turn complex data into clear, actionable insights.",
   },
 ];
 
@@ -41,28 +41,28 @@ export const About = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Shipping scalable products, 
+              Engineering scalable solutions,
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                one intentional build at a time.
+                with precision and purpose.
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
                 <p>
-                    I'm a 6th semester B.Tech Computer Science and Design student focused on building efficient, scalable web applications. I started with frontend development and gradually moved into full-stack engineering, ensuring I understand both the user interface and the system behind it.
+                  I am a 6th semester B.Tech Computer Science and Design student focused on full-stack web development with the MERN stack. My work centers on scalable, performance-oriented applications built with strong structure and maintainable code.
                 </p>
                 <p>
-                    I primarily work with React, JavaScript, and the MERN stack, building structured applications with optimized APIs, clean component architecture, and data-driven features. I focus on performance, clarity, and maintainable code.
+                  I started with frontend development and expanded into backend engineering to deliver complete products. I have built full-stack applications, analytics dashboards, and interactive visualization tools using React, Node.js, Express.js, MongoDB, Chart.js, Three.js, Tailwind CSS, HTML, and CSS.
                 </p>
                 <p>
-                    Beyond development, I serve as Chair of the IEEE Computer Society GCET SB and Secretary of IEEE GCET SB, leading technical initiatives and collaborating with teams to execute impactful projects.
+                  Alongside development, I lead technical communities through IEEE, currently serving as Secretary of IEEE GCET Student Branch and Chairperson of IEEE Computer Society GCET Student Branch. Across these roles, I have organized 10+ technical events including coding workshops, expert talks, and hackathons.
                 </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "I aim to build structured, performance-driven systems that not only deliver a smooth user experience but are also architected for clarity, scalability, and long-term maintainability."
+                "I build technology solutions that combine clean system design, scalable engineering, and practical real-world impact."
               </p>
             </div>
           </div>

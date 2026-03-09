@@ -3,11 +3,19 @@ import Button from "../components/Button";
 import { useState,useEffect } from "react";
 export const Navbar = () => {
     const [isMobileMenuOpen,setIsMobileMenuOpen]=useState(false);
+        const handleContactClick = () => {
+            const contactSection = document.getElementById("contact");
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+            setIsMobileMenuOpen(false);
+        };
+
     const navLinks=[
     { href:"#about",label:"About"},
     { href:"#experience",label:"Experience" },
     {href:"#projects",label:"Projects"},
-    {href:"#testimonials",label:"Testimonials"},
+    {href:"#achievements",label:"Achievements"},
 ]; const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -38,7 +46,7 @@ export const Navbar = () => {
                 </div>
                 {/*call to action */}
                 <div className="hidden md:block">
-                    <Button>Contact Me</Button>
+                    <Button type="button" onClick={handleContactClick}>Contact Me</Button>
                 </div>
                 {/*mobile menu button*/}
                 <button className="md:hidden p-2 text-foreground cursor-pointer" onClick={()=> {setIsMobileMenuOpen(!isMobileMenuOpen)}}>
@@ -53,7 +61,7 @@ export const Navbar = () => {
                             onClick={()=>setIsMobileMenuOpen(false)}
                             className="text-lg text-muted-foreground hover:text-foreground py-2">{link.label}</a>
                         ))}
-                        <Button>Contact Me</Button>
+                        <Button type="button" onClick={handleContactClick}>Contact Me</Button>
                 </div>
                 
             </div>}
