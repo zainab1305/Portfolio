@@ -2,24 +2,6 @@ import ScrollReveal from "../components/ScrollReveal";
 
 const experiences = [
   {
-    period: "2025 — 2026",
-    role: "Vice Chairperson",
-    company: "IEEE Computer Society GCET Student Branch",
-    description:
-      "Co-led technical programming and operations, helping organize workshops, coding activities, and speaker sessions for a growing student community.",
-    technologies: ["Program Coordination", "Team Collaboration", "Leadership", "Public Speaking"],
-    current: false,
-  },
-  {
-    period: "May 2025 — June 2025",
-    role: "Web Development Intern",
-    company: "Zidio Development",
-    description:
-      "Built responsive web interfaces, integrated frontend modules with APIs, and improved UI performance to deliver faster and more consistent user experiences.",
-    technologies: ["React", "JavaScript", "REST APIs", "Tailwind CSS"],
-    current: false,
-  },
-  {
     period: "2026 — 2027",
     role: "Chairperson",
     company: "IEEE Computer Society GCET Student Branch",
@@ -36,6 +18,78 @@ const experiences = [
       "Managing branch documentation, official communications, and execution workflows while coordinating teams and stakeholders for smooth event delivery.",
     technologies: ["Documentation", "Communication", "Process Management", "Coordination"],
     current: true,
+  },
+  {
+    period: "February 2026",
+    role: "Hackathon Participant",
+    company: "HackFusion, MNIT Mumbai",
+    description:
+      "Participated in a multi-team hackathon environment and focused on shipping a functional concept through coordinated execution.",
+    technologies: ["Innovation", "Coordination", "Delivery", "Critical Thinking"],
+    current: false,
+  },
+  {
+    period: "January — February 2026",
+    role: "Hackathon Participant",
+    company: "UIDAI Data Hackathon",
+    description:
+      "Worked on Aadhar data to identify patterns and derive useful insights through structured analysis and problem-solving.",
+    technologies: ["Data Analysis", "Pattern Finding", "Problem Solving", "Insights"],
+    current: false,
+  },
+  {
+    period: "March 2026",
+    role: "Hackathon Participant",
+    company: "CVMU Hackathon",
+    description:
+      "Worked on a hackathon solution centered on structured ideation, implementation, and short-cycle refinement with teammates.",
+    technologies: ["Ideation", "Implementation", "Refinement", "Teamwork"],
+    current: false,
+  },
+  {
+    period: "January 2026",
+    role: "Hackathon Participant",
+    company: "Odoo x GCET",
+    description:
+      "Contributed to a college-industry hackathon challenge by translating requirements into a workable prototype and presenting the solution clearly.",
+    technologies: ["Prototype Building", "Presentation", "Requirements", "Solution Design"],
+    current: false,
+  },
+  {
+    period: "July 2025",
+    role: "Hackathon Participant",
+    company: "Adobe Hackathon",
+    description:
+      "Built and iterated on a creative technical solution in a competitive setting, with emphasis on design clarity and fast execution.",
+    technologies: ["Creativity", "UI Thinking", "Fast Iteration", "Team Collaboration"],
+    current: false,
+  },
+  {
+    period: "2025 — 2026",
+    role: "Vice Chairperson",
+    company: "IEEE Computer Society GCET Student Branch",
+    description:
+      "Co-led technical programming and operations, helping organize workshops, coding activities, and speaker sessions for a growing student community.",
+    technologies: ["Program Coordination", "Team Collaboration", "Leadership", "Public Speaking"],
+    current: false,
+  },
+  {
+    period: "August 2025",
+    role: "Hackathon Participant",
+    company: "Odoo Hackathon",
+    description:
+      "Worked on an event challenge focused on building a practical solution quickly, sharpening coordination and product thinking.",
+    technologies: ["Collaboration", "Product Thinking", "Implementation", "Agile Delivery"],
+    current: false,
+  },
+  {
+    period: "May 2025 — June 2025",
+    role: "Web Development Intern",
+    company: "Zidio Development",
+    description:
+      "Built responsive web interfaces, integrated frontend modules with APIs, and improved UI performance to deliver faster and more consistent user experiences.",
+    technologies: ["React", "JavaScript", "REST APIs", "Tailwind CSS"],
+    current: false,
   },
 ];
 
