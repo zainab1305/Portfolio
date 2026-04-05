@@ -81,7 +81,7 @@ export const Contact = () => {
     }
   };
   return (
-    <section id="contact" className="py-32 relative overflow-hidden">
+    <section id="contact" className="py-20 sm:py-24 lg:py-32 relative overflow-hidden">
       {/* Section divider */}
       <div className="section-divider mb-32" />
 
@@ -90,7 +90,7 @@ export const Contact = () => {
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="page-container relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <ScrollReveal>
@@ -100,7 +100,7 @@ export const Contact = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={100}>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
               Let's build{" "}
               <span className="font-serif italic font-normal text-white">
                 something great.
@@ -116,10 +116,10 @@ export const Contact = () => {
           </ScrollReveal>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 max-w-5xl mx-auto">
           <ScrollReveal delay={300} direction="left">
-            <div className="glass p-8 rounded-3xl border border-primary/30 magnetic-card">
-              <form className="space-y-6" onSubmit={handleSubmit}>
+            <div className="glass p-6 sm:p-8 rounded-3xl border border-primary/30 magnetic-card">
+              <form className="space-y-5 sm:space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label
                     htmlFor="name"
@@ -136,7 +136,7 @@ export const Contact = () => {
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
                     }
-                    className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                    className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-sm sm:text-base"
                   />
                 </div>
 
@@ -156,7 +156,7 @@ export const Contact = () => {
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
-                    className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                    className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-sm sm:text-base"
                   />
                 </div>
 
@@ -175,7 +175,7 @@ export const Contact = () => {
                       setFormData({ ...formData, message: e.target.value })
                     }
                     placeholder="Your message..."
-                    className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
+                    className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none text-sm sm:text-base"
                   />
                 </div>
 
@@ -218,9 +218,9 @@ export const Contact = () => {
 
           {/* Contact Info */}
           <ScrollReveal delay={400} direction="right">
-            <div className="space-y-6">
-              <div className="glass rounded-3xl p-8 magnetic-card">
-                <h3 className="text-xl font-semibold mb-6">
+            <div className="space-y-5 sm:space-y-6">
+              <div className="glass rounded-3xl p-6 sm:p-8 magnetic-card">
+                <h3 className="text-lg sm:text-xl font-semibold mb-6">
                   Contact Information
                 </h3>
                 <div className="space-y-4">
@@ -245,7 +245,7 @@ export const Contact = () => {
               </div>
 
               {/* Availability Card */}
-              <div className="glass rounded-3xl p-8 border border-primary/30 magnetic-card animate-pulse-glow">
+              <div className="glass rounded-3xl p-6 sm:p-8 border border-primary/30 magnetic-card animate-pulse-glow">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                   <span className="font-medium">Currently Available</span>

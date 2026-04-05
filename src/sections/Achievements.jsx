@@ -41,13 +41,13 @@ const achievements = [
 
 export const Achievements = () => {
   return (
-    <section id="achievements" className="py-32 relative overflow-hidden">
+    <section id="achievements" className="py-20 sm:py-24 lg:py-32 relative overflow-hidden">
       {/* Section divider */}
       <div className="section-divider mb-32" />
 
       <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="page-container relative z-10">
         <div className="max-w-3xl mb-16">
           <ScrollReveal>
             <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
@@ -56,7 +56,7 @@ export const Achievements = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={100}>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
               Results that reflect{" "}
               <span className="font-serif italic font-normal text-white">
                 focused execution.
@@ -71,16 +71,16 @@ export const Achievements = () => {
           </ScrollReveal>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-5 sm:gap-6">
           {achievements.map((item, idx) => (
             <ScrollReveal key={idx} delay={(idx + 1) * 100} direction={idx % 2 === 0 ? "left" : "right"}>
-              <div className="glass rounded-2xl p-6 border border-primary/20 hover:border-primary/50 transition-all duration-300 magnetic-card h-full">
+              <div className="glass rounded-2xl p-5 sm:p-6 border border-primary/20 hover:border-primary/50 transition-all duration-300 magnetic-card h-full">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group">
                     <item.icon className="w-6 h-6 text-primary transition-transform duration-300 group-hover:scale-110" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-lg font-semibold leading-snug">{item.title}</h3>
+                    <h3 className="text-base sm:text-lg font-semibold leading-snug">{item.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {item.description}
                     </p>

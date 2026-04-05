@@ -30,12 +30,12 @@ const highlights = [
 
 export const About = () => {
   return (
-    <section id="about" className="py-32 relative overflow-hidden">
+    <section id="about" className="py-20 sm:py-24 lg:py-32 relative overflow-hidden">
       {/* Section divider */}
       <div className="section-divider mb-32" />
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="page-container relative z-10">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Column */}
           <div className="space-y-8">
             <ScrollReveal>
@@ -45,7 +45,7 @@ export const About = () => {
             </ScrollReveal>
 
             <ScrollReveal delay={100}>
-              <h2 className="text-4xl md:text-5xl font-bold leading-tight text-secondary-foreground">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-secondary-foreground">
                 Engineering scalable solutions,
                 <span className="font-serif italic font-normal text-white">
                   {" "}
@@ -56,13 +56,13 @@ export const About = () => {
 
             <ScrollReveal delay={200}>
               <div className="space-y-4 text-muted-foreground">
-                <p>
+                <p className="text-sm sm:text-base">
                   I am a 7th semester B.Tech Computer Science and Design student focused on full-stack web development with the MERN stack. My work centers on scalable, performance-oriented applications built with strong structure and maintainable code.
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   I started with frontend development and expanded into backend engineering to deliver complete products. I have built full-stack applications, analytics dashboards, and interactive visualization tools using React, Node.js, Express.js, MongoDB, Chart.js, Three.js, Tailwind CSS, HTML, and CSS.
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   Alongside development, I lead technical communities through IEEE, currently serving as Secretary of IEEE GCET Student Branch and Chairperson of IEEE Computer Society GCET Student Branch. Across these roles, I have organized 10+ technical events including coding workshops, expert talks, and hackathons.
                 </p>
               </div>
@@ -78,7 +78,7 @@ export const About = () => {
           </div>
 
           {/* Right Column - Highlights */}
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-5 sm:gap-6">
             {highlights.map((item, idx) => (
               <ScrollReveal key={idx} delay={(idx + 1) * 120} direction={idx % 2 === 0 ? "left" : "right"}>
                 <div className="glass p-6 rounded-2xl magnetic-card h-full">

@@ -41,7 +41,7 @@ const experiences = [
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-32 relative overflow-hidden">
+    <section id="experience" className="py-20 sm:py-24 lg:py-32 relative overflow-hidden">
       {/* Section divider */}
       <div className="section-divider mb-32" />
 
@@ -50,7 +50,7 @@ export const Experience = () => {
        h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"
       />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="page-container relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <ScrollReveal>
@@ -64,7 +64,7 @@ export const Experience = () => {
 
           <ScrollReveal delay={100}>
             <h2
-              className="text-4xl md:text-5xl font-bold
+              className="text-3xl sm:text-4xl md:text-5xl font-bold
            mt-4 mb-6 text-secondary-foreground"
             >
               Experience that{" "}
@@ -94,7 +94,7 @@ export const Experience = () => {
                 delay={idx * 150}
                 direction={idx % 2 === 0 ? "left" : "right"}
               >
-                <div className="relative grid md:grid-cols-2 gap-8">
+                <div className="relative grid md:grid-cols-2 gap-6 sm:gap-8">
                   {/* Timeline Dot */}
                   <div className="absolute left-0 md:left-1/2 top-0 w-3 h-3 bg-primary rounded-full -translate-x-1/2 ring-4 ring-background z-10">
                     {exp.current && (
@@ -111,12 +111,12 @@ export const Experience = () => {
                     }`}
                   >
                     <div
-                      className="glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500 magnetic-card"
+                      className="glass p-5 sm:p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500 magnetic-card"
                     >
                       <span className="text-sm text-primary font-medium">
                         {exp.period}
                       </span>
-                      <h3 className="text-xl font-semibold mt-2">{exp.role}</h3>
+                      <h3 className="text-lg sm:text-xl font-semibold mt-2">{exp.role}</h3>
                       <p className="text-muted-foreground">{exp.company}</p>
                       <p className="text-sm text-muted-foreground mt-4">
                         {exp.description}

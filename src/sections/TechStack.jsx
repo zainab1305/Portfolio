@@ -335,7 +335,7 @@ const TechChip = ({ tech, color, delay }) => {
       style={{ animationDelay: `${delay}ms` }}
     >
       <div
-        className="relative flex items-center gap-3 px-4 py-3 rounded-2xl
+        className="relative flex items-center gap-3 px-3 sm:px-4 py-3 rounded-2xl max-w-full
           border border-white/[0.06] bg-white/[0.03] backdrop-blur-sm
           hover:bg-white/[0.08] hover:border-white/[0.15]
           transition-all duration-500 cursor-default"
@@ -357,7 +357,7 @@ const TechChip = ({ tech, color, delay }) => {
         </div>
 
         {/* Name */}
-        <span className="text-sm font-medium text-white/80 group-hover:text-white transition-colors whitespace-nowrap">
+        <span className="text-xs sm:text-sm font-medium text-white/80 group-hover:text-white transition-colors whitespace-normal sm:whitespace-nowrap leading-tight">
           {tech.name}
         </span>
 
@@ -491,7 +491,7 @@ const MarqueeChip = ({ tech }) => {
 
   return (
     <div
-      className="flex-shrink-0 px-5 py-2.5 mx-2 rounded-full flex items-center gap-2.5
+      className="flex-shrink-0 px-4 sm:px-5 py-2.5 mx-1.5 sm:mx-2 rounded-full flex items-center gap-2.5
         transition-all duration-300 cursor-default"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -505,13 +505,13 @@ const MarqueeChip = ({ tech }) => {
       }}
     >
       <div
-        className="w-5 h-5 transition-transform duration-300"
+        className="w-5 h-5 transition-transform duration-300 shrink-0"
         style={{ transform: isHovered ? "scale(1.2)" : "scale(1)" }}
       >
         {icons[tech.name]}
       </div>
       <span
-        className="text-sm font-medium whitespace-nowrap transition-colors duration-300"
+        className="text-xs sm:text-sm font-medium whitespace-nowrap transition-colors duration-300"
         style={{ color: isHovered ? tech.color : "rgba(255,255,255,0.4)" }}
       >
         {tech.name}
@@ -526,11 +526,11 @@ const TechMarquee = () => {
 
   return (
     <div
-      className="group/marquee relative mt-16 overflow-hidden"
+      className="group/marquee relative mt-12 sm:mt-16 overflow-hidden"
     >
       {/* Fade edges */}
-      <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10" />
-      <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
+      <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-background to-transparent z-10" />
+      <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-background to-transparent z-10" />
 
       <div
         className="flex animate-tech-marquee group-hover/marquee:[animation-play-state:paused]"
@@ -546,16 +546,16 @@ const TechMarquee = () => {
 /* ─── Main Section ─── */
 const TechStack = () => {
   return (
-    <section id="techstack" className="py-32 relative overflow-hidden">
+    <section id="techstack" className="py-20 sm:py-24 lg:py-32 relative overflow-hidden">
       <FloatingParticles />
 
       {/* Background glows */}
       <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-[120px]" />
       <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-green-500/5 rounded-full blur-[120px]" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="page-container relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-20">
           <ScrollReveal>
             <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
               Tools & Technologies
@@ -563,7 +563,7 @@ const TechStack = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={100}>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
               My technology{" "}
               <span className="font-serif italic font-normal text-white">
                 arsenal.
@@ -580,7 +580,7 @@ const TechStack = () => {
 
           {/* Stats row */}
           <ScrollReveal delay={300}>
-            <div className="flex justify-center gap-8 mt-8">
+            <div className="grid grid-cols-3 gap-4 sm:flex sm:flex-wrap justify-center mt-8">
               {[
                 { value: "29+", label: "Technologies" },
                 { value: "4", label: "Domains" },
@@ -596,7 +596,7 @@ const TechStack = () => {
         </div>
 
         {/* Category Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {techCategories.map((category, idx) => (
             <CategoryCard key={category.name} category={category} index={idx} />
           ))}

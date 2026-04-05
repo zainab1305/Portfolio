@@ -13,7 +13,7 @@ export const Hero = () => {
     };
 
     return (
-        <section className="relative min-h-screen flex items-center overflow-hidden">
+        <section className="relative min-h-[100svh] flex items-start md:items-center overflow-hidden">
            <div className="absolute inset-0">
             <img src="hero-bg.jpg" 
             alt="Hero Background" 
@@ -21,7 +21,7 @@ export const Hero = () => {
            <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background"/>
            </div>
             {/* Green Dots */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none hidden sm:block">
             {[...Array(30)].map((_, i) => (
                 <div key={i} className="absolute w-1.5 h-1.5 rounded-full opacity-60"
                     style={{
@@ -37,12 +37,12 @@ export const Hero = () => {
             ))}
             </div>
              {/* Content */}
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="page-container pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Left Column - Text Content */}
-          <div className="space-y-8">
+          <div className="space-y-7 sm:space-y-8">
             <div className="animate-fade-in">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs sm:text-sm text-primary max-w-full">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                 MERN Full-Stack Developer | IEEE Student Leader
               </span>
@@ -50,7 +50,7 @@ export const Hero = () => {
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                 Building <span className="text-primary glow-text">scalable</span>
                 <br />
                 digital products with
@@ -59,12 +59,12 @@ export const Hero = () => {
                   engineering clarity.
                 </span>
               </h1>
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-xl animate-fade-in animation-delay-200">
                 I'm Zainab Jambughodawala, a 7th semester Computer Science and Design student building scalable MERN applications. I combine clean architecture, efficient APIs, and leadership experience to deliver measurable technical outcomes.
               </p>
             </div>
              {/* CTAs */}
-            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 animate-fade-in animation-delay-300">
               <Button size="xl" type="button" onClick={handleContactClick}>
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
@@ -74,7 +74,7 @@ export const Hero = () => {
               </AnimatedBorderButton>
             </div>
             {/* Social Links */}
-            <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+            <div className="flex flex-wrap items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Let's connect: </span>
               {[
                 { icon: Github, href: "https://github.com/zainab1305" },
@@ -91,9 +91,9 @@ export const Hero = () => {
             </div>
           </div>
           {/* Right Column - Profile Image */}
-          <div className="relative animate-fade-in animation-delay-300">
+          <div className="relative animate-fade-in animation-delay-300 mt-4 lg:mt-0">
             {/* Profile Image */}
-            <div className="relative max-w-md mx-auto">
+            <div className="relative max-w-sm sm:max-w-md mx-auto lg:ml-auto">
               <div
                 className="absolute inset-0 
               rounded-3xl bg-gradient-to-br 
@@ -109,10 +109,10 @@ export const Hero = () => {
                 <div className="absolute inset-2 rounded-2xl bg-gradient-to-t from-black/35 via-black/15 to-transparent pointer-events-none" />
 
                 {/* Floating Badge */}
-                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
+                <div className="absolute -bottom-5 -right-2 sm:-right-4 glass rounded-xl px-3 sm:px-4 py-3 animate-float max-w-[220px]">
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                    <span className="text-sm font-medium">
+                    <span className="text-xs sm:text-sm font-medium leading-snug">
                       Open to internships and collaborations
                     </span>
                   </div>
