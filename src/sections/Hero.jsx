@@ -3,36 +3,7 @@ import { Github, Linkedin, ArrowRight, Download } from "lucide-react";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 import Button from "../components/Button";
 import resumePdf from "../assets/Resume_Zainab.pdf";
-const skills = {
-  core: [
-    "React",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-  ],
-  frontend: [
-    "Next.js",
-    "JavaScript",
-    "Tailwind CSS",
-    "Three.js",
-    "Chart.js",
-    "Responsive Design",
-  ],
-  backend: [
-    "REST APIs",
-    "JWT Authentication",
-    "MySQL",
-    "SQLite",
-    "Django",
-    "Flask",
-    "Python",
-  ],
-  tools: [
-    "Git",
-    "Figma",
-    "VS Code",
-  ],
-};
+
 export const Hero = () => {
     const handleContactClick = () => {
       const contactSection = document.getElementById("contact");
@@ -52,7 +23,7 @@ export const Hero = () => {
             {/* Green Dots */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
             {[...Array(30)].map((_, i) => (
-                <div className="absolute w-1.5 h-1.5 rounded-full opacity-60"
+                <div key={i} className="absolute w-1.5 h-1.5 rounded-full opacity-60"
                     style={{
                     backgroundColor: "#20B2A6",
                     left: `${Math.random() * 100}%`,
@@ -89,7 +60,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                I'm Zainab Jambughodawala, a 6th semester Computer Science and Design student building scalable MERN applications. I combine clean architecture, efficient APIs, and leadership experience to deliver measurable technical outcomes.
+                I'm Zainab Jambughodawala, a 7th semester Computer Science and Design student building scalable MERN applications. I combine clean architecture, efficient APIs, and leadership experience to deliver measurable technical outcomes.
               </p>
             </div>
              {/* CTAs */}
@@ -146,72 +117,12 @@ export const Hero = () => {
                     </span>
                   </div>
                 </div>
-                {/* Stats Badge */}
-                {/* <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">5+</div>
-                  <div className="text-xs text-muted-foreground">
-                    Years Exp.
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
         </div>
-        {/* Skills Section
-        <div className="mt-20 animate-fade-in animation-delay-600">
-          <p className="text-base text-muted-foreground mb-6 text-center">
-            Technologies I work with
-          </p>
-          <div className="relative overflow-hidden">
-            <div
-              className="absolute left-0 top-0 bottom-0 w-32
-             bg-gradient-to-r from-background to-transparent z-10"
-            />
-            <div
-              className="absolute right-0 top-0 bottom-0 w-32
-             bg-gradient-to-l from-background to-transparent z-10"
-            />
-            <div className="flex animate-marquee">
-              {[...skills, ...skills].map((skill, idx) => (
-                <div key={idx} className="flex-shrink-0 px-8 py-4">
-                  <span className="text-xl font-semibold text-muted-primary/50 hover:text-muted-foreground transition-colors">
-                    {skill}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div> */}
-        {/* Skills Section */}
-<div className="mt-24 animate-fade-in animation-delay-600">
-  <p className="text-base text-muted-foreground mb-12 text-center">
-    Technologies I use to build scalable systems
-  </p>
 
-  <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-    {Object.entries(skills).map(([category, items]) => (
-      <div
-        key={category}
-        className="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-primary/40 transition-all duration-300"
-      >
-        <h3 className="text-lg font-semibold mb-6 text-primary capitalize">
-          {category}
-        </h3>
 
-        <div className="flex flex-wrap gap-3">
-          {items.map((skill, idx) => (
-            <span
-              key={idx}
-              className="px-4 py-2 text-sm rounded-full border border-white/10 text-muted-foreground hover:text-foreground hover:border-primary/40 transition-all duration-200"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
         </div>
         
         </section>

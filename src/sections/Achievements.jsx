@@ -1,4 +1,5 @@
 import { Award, GraduationCap, Users, Megaphone, Trophy } from "lucide-react";
+import ScrollReveal from "../components/ScrollReveal";
 
 const achievements = [
   {
@@ -41,46 +42,55 @@ const achievements = [
 export const Achievements = () => {
   return (
     <section id="achievements" className="py-32 relative overflow-hidden">
+      {/* Section divider */}
+      <div className="section-divider mb-32" />
+
       <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mb-16">
-          <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-            Achievements
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-            Results that reflect{" "}
-            <span className="font-serif italic font-normal text-white">
-              focused execution.
+          <ScrollReveal>
+            <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
+              Achievements
             </span>
-          </h2>
-          <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A snapshot of academic performance, technical leadership, and outcome-driven contributions across development and community initiatives.
-          </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
+              Results that reflect{" "}
+              <span className="font-serif italic font-normal text-white">
+                focused execution.
+              </span>
+            </h2>
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <p className="text-muted-foreground">
+              A snapshot of academic performance, technical leadership, and outcome-driven contributions across development and community initiatives.
+            </p>
+          </ScrollReveal>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {achievements.map((item, idx) => (
-            <div
-              key={idx}
-              className="glass rounded-2xl p-6 border border-primary/20 hover:border-primary/50 transition-all duration-300 animate-fade-in"
-              style={{ animationDelay: `${(idx + 1) * 100}ms` }}
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <item.icon className="w-6 h-6 text-primary" />
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-lg font-semibold leading-snug">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs bg-primary/10 text-primary border border-primary/20">
-                    {item.impact}
-                  </span>
+            <ScrollReveal key={idx} delay={(idx + 1) * 100} direction={idx % 2 === 0 ? "left" : "right"}>
+              <div className="glass rounded-2xl p-6 border border-primary/20 hover:border-primary/50 transition-all duration-300 magnetic-card h-full">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group">
+                    <item.icon className="w-6 h-6 text-primary transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-lg font-semibold leading-snug">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {item.description}
+                    </p>
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs bg-primary/10 text-primary border border-primary/20 animate-pulse-glow">
+                      {item.impact}
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
