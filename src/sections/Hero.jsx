@@ -2,7 +2,7 @@ import React from "react";
 import { Github, Linkedin, ArrowRight, Download } from "lucide-react";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 import Button from "../components/Button";
-import resumePdf from "../assets/Resume_Zainab.pdf";
+
 
 export const Hero = () => {
     const handleContactClick = () => {
@@ -68,7 +68,7 @@ export const Hero = () => {
               <Button size="xl" type="button" onClick={handleContactClick}>
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton href={resumePdf} download="Resume_Zainab.pdf" aria-label="Download Zainab Resume">
+              <AnimatedBorderButton href="/Resume_Zainab.pdf" download="Resume_Zainab.pdf" aria-label="Download Zainab Resume">
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>

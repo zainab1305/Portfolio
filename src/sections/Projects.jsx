@@ -39,6 +39,15 @@ const projects = [
     link: "https://github.com/zainab1305/Meal-Planner",
     github: "https://github.com/zainab1305/Meal-Planner",
   },
+  {
+    title: "Student Mental Health Risk Predictor",
+    description:
+      "Built an end-to-end AI/ML screening tool that predicts student mental health risk levels (Low, Mild, Moderate) from demographic, academic, and symptom inputs. Trained and compared five classifiers using stratified cross-validation with stability-aware model selection, and deployed an interactive Streamlit interface for real-time predictions with class probability breakdowns.",
+    image: "/5.png",
+    tags: ["Python", "Scikit-learn", "Streamlit", "Pandas", "ML"],
+    link: "https://github.com/zainab1305/Student-Mental-Health-Prediction-",
+    github: "https://github.com/zainab1305/Student-Mental-Health-Prediction-",
+  },
 ];
 
 export const Projects = () => {
