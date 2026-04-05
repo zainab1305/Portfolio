@@ -20,17 +20,17 @@ const experiences = [
     current: true,
   },
   {
-    period: "February 2026",
-    role: "Hackathon Participant",
-    company: "HackFusion, MNIT Mumbai",
+    period: "May 2025 — June 2025",
+    role: "Web Development Intern",
+    company: "Zidio Development",
     description:
-      "Participated in a multi-team hackathon environment and focused on shipping a functional concept through coordinated execution.",
-    technologies: ["Innovation", "Coordination", "Delivery", "Critical Thinking"],
+      "Built responsive web interfaces, integrated frontend modules with APIs, and improved UI performance to deliver faster and more consistent user experiences.",
+    technologies: ["React", "JavaScript", "REST APIs", "Tailwind CSS"],
     current: false,
   },
   {
     period: "January — February 2026",
-    role: "Hackathon Participant",
+    role: "Data Analyst Participant",
     company: "UIDAI Data Hackathon",
     description:
       "Worked on Aadhar data to identify patterns and derive useful insights through structured analysis and problem-solving.",
@@ -38,20 +38,29 @@ const experiences = [
     current: false,
   },
   {
+    period: "February 2026",
+    role: "Platform Builder",
+    company: "HackFusion, MNIT Mumbai",
+    description:
+      "Built a hackathon prototype focused on rapid execution, collaboration, and turning an initial concept into a working solution under time pressure.",
+    technologies: ["Rapid Prototyping", "Coordination", "Delivery", "Critical Thinking"],
+    current: false,
+  },
+  {
     period: "March 2026",
-    role: "Hackathon Participant",
+    role: "Solution Builder",
     company: "CVMU Hackathon",
     description:
-      "Worked on a hackathon solution centered on structured ideation, implementation, and short-cycle refinement with teammates.",
+      "Worked on a remote medical consultancy platform, centered on structured ideation, implementation, and short-cycle refinement with teammates.",
     technologies: ["Ideation", "Implementation", "Refinement", "Teamwork"],
     current: false,
   },
   {
     period: "January 2026",
-    role: "Hackathon Participant",
-    company: "Odoo x GCET",
+    role: "Platform Contributor",
+    company: "Odoo x GCET Hackathon",
     description:
-      "Contributed to a college-industry hackathon challenge by translating requirements into a workable prototype and presenting the solution clearly.",
+      "Built a DayFlow HRMS software concept by translating requirements into a workable prototype and presenting the solution clearly.",
     technologies: ["Prototype Building", "Presentation", "Requirements", "Solution Design"],
     current: false,
   },
@@ -75,20 +84,11 @@ const experiences = [
   },
   {
     period: "August 2025",
-    role: "Hackathon Participant",
+    role: "Platform Builder",
     company: "Odoo Hackathon",
     description:
-      "Worked on an event challenge focused on building a practical solution quickly, sharpening coordination and product thinking.",
+      "Built a skill swap platform focused on practical exchange flows, quick implementation, and product thinking under a tight deadline.",
     technologies: ["Collaboration", "Product Thinking", "Implementation", "Agile Delivery"],
-    current: false,
-  },
-  {
-    period: "May 2025 — June 2025",
-    role: "Web Development Intern",
-    company: "Zidio Development",
-    description:
-      "Built responsive web interfaces, integrated frontend modules with APIs, and improved UI performance to deliver faster and more consistent user experiences.",
-    technologies: ["React", "JavaScript", "REST APIs", "Tailwind CSS"],
     current: false,
   },
 ];
