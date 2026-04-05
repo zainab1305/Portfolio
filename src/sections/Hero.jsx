@@ -68,7 +68,7 @@ export const Hero = () => {
               <Button size="xl" type="button" onClick={handleContactClick}>
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton href="/Resume_Zainab.pdf" download="Resume_Zainab.pdf" aria-label="Download Zainab Resume">
+              <AnimatedBorderButton href="/Zainab_Resume.pdf" download="Zainab_Resume.pdf" aria-label="Download Zainab Resume">
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
