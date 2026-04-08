@@ -60,7 +60,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-base sm:text-lg text-muted-foreground max-w-xl animate-fade-in animation-delay-200">
-                I'm Zainab Jambughodawala, a 7th semester Computer Science and Design student building scalable MERN applications. I combine clean architecture, efficient APIs, and leadership experience to deliver measurable technical outcomes.
+                I'm Zainab Jambughodawala, a 6th semester Computer Science and Design student building scalable MERN applications. I combine clean architecture, efficient APIs, and leadership experience to deliver measurable technical outcomes.
               </p>
             </div>
              {/* CTAs */}

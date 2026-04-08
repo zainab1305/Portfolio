@@ -57,7 +57,7 @@ export const About = () => {
             <ScrollReveal delay={200}>
               <div className="space-y-4 text-muted-foreground">
                 <p className="text-sm sm:text-base">
-                  I am a 7th semester B.Tech Computer Science and Design student focused on full-stack web development with the MERN stack. My work centers on scalable, performance-oriented applications built with strong structure and maintainable code.
+                  I am a 6th semester B.Tech Computer Science and Design student focused on full-stack web development with the MERN stack. My work centers on scalable, performance-oriented applications built with strong structure and maintainable code.
                 </p>
                 <p className="text-sm sm:text-base">
                   I started with frontend development and expanded into backend engineering to deliver complete products. I have built full-stack applications, analytics dashboards, and interactive visualization tools using React, Node.js, Express.js, MongoDB, Chart.js, Three.js, Tailwind CSS, HTML, and CSS.
