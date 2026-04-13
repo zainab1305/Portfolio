@@ -12,9 +12,10 @@ export const Navbar = () => {
         };
 
     const navLinks=[
+    { href:"#",label:"Home"},
     { href:"#about",label:"About"},
-    { href:"#experience",label:"Experience" },
     {href:"#projects",label:"Projects"},
+    { href:"#experience",label:"Experience" },
     {href:"#achievements",label:"Achievements"},
 ]; const [isScrolled, setIsScrolled] = useState(false);
 
