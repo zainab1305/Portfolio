@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, ArrowRight, Download } from "lucide-react";
+import { Github, Linkedin, ArrowRight, FileText } from "lucide-react";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 import Button from "../components/Button";
 
@@ -68,9 +68,9 @@ export const Hero = () => {
               <Button size="xl" type="button" onClick={handleContactClick}>
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton href="/Zainab_Resume.pdf" download="Zainab_Resume.pdf" aria-label="Download Zainab Resume">
-                <Download className="w-5 h-5" />
-                Download CV
+              <AnimatedBorderButton href="/Zainab_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Zainab Resume">
+                <FileText className="w-5 h-5" />
+                My Resume
               </AnimatedBorderButton>
             </div>
             {/* Social Links */}
@@ -83,6 +83,8 @@ export const Hero = () => {
                 <a
                   key={idx}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
                   {<social.icon className="w-5 h-5" />}
