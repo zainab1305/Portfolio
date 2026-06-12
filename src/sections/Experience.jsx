@@ -1,6 +1,15 @@
 import ScrollReveal from "../components/ScrollReveal";
 
 const experiences = [
+   {
+    period: "May 2026",
+    role: "Product Engineer and Design Intern",
+    company: "AURXON",
+    description:
+      "Contributed to live product engineering across two initiatives — optimizing the AURXON website UI and building RAAP, an AI-powered resume intelligence platform. Worked on semantic NLP pipelines, evidence-based skill scoring, PDF extraction, and frontend integration across a full-stack system.",
+    technologies: ["Python", "FastAPI", "Next.js", "Node.js", "NLP", "React.js", "all-MiniLM-L6-v2", "GLiNER"],
+    current: false,
+  },
   {
     period: "2026 — 2027",
     role: "Chairperson",

@@ -3,6 +3,24 @@ import AnimatedBorderButton from "../components/AnimatedBorderButton";
 import ScrollReveal from "../components/ScrollReveal";
 
 const projects = [
+    {
+    title: "WorkspaceOne - Collaborative Task Management and Scheduling Platform",
+    description:
+      "A full-stack real-time collaboration platform that combines messaging and task management in one room-based workspace, featuring live chat with Socket.IO, voice messages via Supabase Storage, task assignment with priority and due date tracking, shared resources, role-based permissions, and presence-aware notifications for seamless team coordination.",
+    image: "/6.png",
+    tags: ["Next.js", "Node.js", "Socket.IO", "Mongo DB Atlas", "Supabase", "O Auth 2.0"],
+    link: "https://workspace-one-xi-indol.vercel.app",
+    github: "https://github.com/zainab1305/WorkspaceOne",
+  },
+    {
+    title: "UrbanResolve - Smart Infrastructure and Decision Planning System",
+    description:
+      "A full-stack urban infrastructure management platform(still building) enabling issue reporting, image-based priority scoring, role-based dashboards, and task scheduling with real-time status tracking.",
+    image: "/3.png",
+    tags: ["React.js", "Node.js", "MongoDB Atlas", "FastAPI", "OpenCV", "JWT"],
+    link: "https://github.com/zainab1305/Smart-Infra",
+    github: "https://github.com/zainab1305/Smart-Infra",
+  },
   {
     title: "Datalytics",
     description:
@@ -11,15 +29,6 @@ const projects = [
     tags: ["MERN Stack", "Chart.js", "Three.js", "Tailwind Css"],
     link: "https://github.com/zainab1305/Datalytics",
     github: "https://github.com/zainab1305/Datalytics",
-  },
-  {
-    title: "Smart Infrastructure and Decision Planning System",
-    description:
-      "A full-stack urban infrastructure management platform(still building) enabling issue reporting, image-based priority scoring, role-based dashboards, and task scheduling with real-time status tracking.",
-    image: "/3.png",
-    tags: ["React.js", "Node.js", "MongoDB Atlas", "FastAPI", "OpenCV", "JWT"],
-    link: "https://github.com/zainab1305/Smart-Infra",
-    github: "https://github.com/zainab1305/Smart-Infra",
   },
   {
     title: "Stock Search and Analysis",
